@@ -29,19 +29,20 @@ function loadCSS(href) {
 // Load all required resources
 async function loadResources() {
   try {
-    // Load CSS files
+    const timestamp = new Date().getTime();
+    // Load CSS and JS files with cache-busting timestamp
     await Promise.all([
       loadCSS(
-        "https://makeup.sdk.orbo.ai/WAjLANasI8/4.0.0/smart-capture/orbo-clinikally-skinanalysis.css"
+        `https://makeup.sdk.orbo.ai/WAjLANasI8/4.0.0/smart-capture/orbo-clinikally-skinanalysis.css?t=${timestamp}`
       ),
       loadCSS(
-        "https://cdn.jsdelivr.net/gh/ulhaspawar/static-resources/eyllek/style.css"
+        `https://cdn.jsdelivr.net/gh/ulhaspawar/static-resources/eyllek/style.css?t=${timestamp}`
       ),
       loadScript(
-        "https://makeup.sdk.orbo.ai/WAjLANasI8/4.0.0/smart-capture/orbo-clinikally-skinanalysis.js"
+        `https://makeup.sdk.orbo.ai/WAjLANasI8/4.0.0/smart-capture/orbo-clinikally-skinanalysis.js?t=${timestamp}`
       ),
       loadScript(
-        "https://cdn.jsdelivr.net/gh/ulhaspawar/static-resources@db8de68/eyllek/orbo-skin-analyzer.umd.js"
+        `https://cdn.jsdelivr.net/gh/ulhaspawar/static-resources@a205eb3/eyllek/orbo-skin-analyzer.umd.js?t=${timestamp}`
       ),
     ]);
 
