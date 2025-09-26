@@ -54,7 +54,7 @@ async function loadResources() {
           `https://makeup.sdk.orbo.ai/93QCV3Pk/smart-capture/5.0.0/orbo-smart-capture.js?t=${timestamp}`
         ),
         loadScript(
-          `https://cdn.jsdelivr.net/gh/ulhaspawar/static-resources@main/10h2/dist/orbo-skin-analyzer.umd.a33ff5e5.js?t=${timestamp}`
+          `https://cdn.jsdelivr.net/gh/ulhaspawar/static-resources@main/10h2/orbo-skin-analyzer.umd.a33ff5e5.js?t=${timestamp}`
         ),
       ]);
 
