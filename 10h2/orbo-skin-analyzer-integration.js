@@ -48,13 +48,13 @@ async function loadResources() {
       // Load CSS and JS files with cache-busting timestamp
       await Promise.all([
         loadCSS(
-          `https://cdn.jsdelivr.net/gh/ulhaspawar/static-resources@main/10h2/style.css?t=${timestamp}`
+          `https://cdn.jsdelivr.net/gh/ulhaspawar/static-resources@main/10h2/orbo-skin-analyzer.fd953e7a.css?t=${timestamp}`
         ),
         loadScript(
           `https://makeup.sdk.orbo.ai/93QCV3Pk/smart-capture/5.0.0/orbo-smart-capture.js?t=${timestamp}`
         ),
         loadScript(
-          `https://cdn.jsdelivr.net/gh/ulhaspawar/static-resources@main/10h2/orbo-skin-analyzer.umd.60a21c3e.js?t=${timestamp}`
+          `https://cdn.jsdelivr.net/gh/ulhaspawar/static-resources@main/10h2/dist/orbo-skin-analyzer.umd.a33ff5e5.js?t=${timestamp}`
         ),
       ]);
 
