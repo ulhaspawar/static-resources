@@ -57,7 +57,7 @@ async function loadResources() {
           `https://cdn.jsdelivr.net/gh/ulhaspawar/static-resources@main/10h2/1.0.1/smart-capture/orbo-smart-capture.js?t=${timestamp}`
         ),
         loadScript(
-          `https://cdn.jsdelivr.net/gh/ulhaspawar/static-resources@main/10h2/1.0.1/orbo-skin-analyzer.umd.495598ba.js?t=${timestamp}`
+          `https://cdn.jsdelivr.net/gh/ulhaspawar/static-resources@main/10h2/1.0.1/orbo-skin-analyzer.umd.eb3ca435.js?t=${timestamp}`
         ),
       ]);
 
